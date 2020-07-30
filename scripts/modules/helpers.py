@@ -44,7 +44,7 @@ def _load_image(cache_dir, url):
     if etag == new_etag:
         print("Skipping download of %s, local file is current" % filename)
         return True
-    print("downloading", url)
+    print("downloading %s" % url)
     try:
         os.makedirs(cache_dir)
     except Exception:  # noqa: E722
